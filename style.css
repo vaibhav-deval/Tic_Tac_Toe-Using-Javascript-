@@ -9,7 +9,7 @@ body {
 .container {
   display: flex;
   justify-content: center;
-  background: linear-gradient(135deg, #432371, #FAAE7B);
+  background: linear-gradient(135deg, #432371, #faae7b);
   height: 100vh;
 }
 .app {
@@ -38,8 +38,8 @@ h1 {
   gap: 2px;
   position: relative;
 }
-.buttonsDiv button{
-  border:none;
+.buttonsDiv button {
+  border: none;
   outline: none;
   width: 15vmin;
   height: 15vmin;
@@ -47,9 +47,9 @@ h1 {
   background: transparent;
   color: aliceblue;
   border: 5px solid black;
-  }
+}
 
-.resetBtn{
+.resetBtn {
   font-size: 15px;
   font-weight: bold;
   background: rgb(228, 197, 177);
@@ -57,7 +57,7 @@ h1 {
   padding: 10px 20px 10px 20px;
 }
 
-.msgContainer{
+.msgContainer {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -65,12 +65,35 @@ h1 {
   z-index: 10px;
 }
 
-.msg{
-  font-size: 5rem;
+.msg {
+  font-size: 3rem;
   color: rgb(255, 71, 71);
-  
+  background: rgb(198, 198, 198, 0.8);
+  border-radius: 20px;
 }
 
-.hide{
+.hide {
   display: none;
+}
+
+@media (max-width: 500px) {
+  .buttonsDiv button {
+    width: 12vw;
+    height: 12vw;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .app {
+    width: 95%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  .msg {
+    font-size: 3rem;
+  }
 }
